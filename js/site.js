@@ -14,8 +14,8 @@ function reverseAString(userString) {
     let revString = '';
 
     // reverse the string
-    for(let i = userString.length - 1; i >= 0; i = i - 1) { // starting value, condition 
-       revString += userString[i];
+    for (let i = userString.length - 1; i >= 0; i = i - 1) { // starting value, condition 
+        revString += userString[i];
     }
 
     return revString;
