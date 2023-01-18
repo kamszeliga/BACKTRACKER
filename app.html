@@ -67,9 +67,35 @@
     </header>
 
     <main class="content container">
-        <h1>APP UI GOES HERE</h1>
-        <input id="message" placeholder="Enter a Message..." type="text">
-        <button class="btn btn-primary" type="button" id="btnSubmit"> Display a Message</button>
+        <div class="row row-cols-1 row-cols-md-2 gy-2 h-100 w-100">
+            <div class="col border-2 border-end">
+                <h1 class="fw-bold mb-3">Backtracker: A Coding Challenge</h1>
+                <h4 class="lead">A javascript coding exercise using arrays. This program will take the user's input and write it in reverse.</h4>
+                <h2 class="mt-5 border-2 border-bottom">Instructions</h2>
+                <p>Enter a word and click the button to watch the magic happen.</p>
+            </div>
+            <div class="col">
+                <h5 class="border-bottom border-success">Enter a string to reverse</h5>
+                <form action="#" class="row g-2">
+                   <div class="col">
+                    <input id="userString" type="text" class="form-control" placeholder="Enter a String" aria-label="Enter a String"/>
+                   </div>
+                    <div class="col-12 text-end">
+                        <button class="btn btn-success" id="btnSubmit" type="button">Reverse!</button>
+                    </div>
+                </form>
+                <div class="mt-5 alert alert-success invisible fade show" id="alert" role="alert">
+                    <h4 class="alert-heading">Your String Reversed:</h4>
+                    <hr/>
+                    <p class="mb-0" id="results"> </p>
+                </div>
+            
+            </div>
+
+
+
+
+        </div>
     </main>
 
     <footer class="container-fluid footer-main">
@@ -101,7 +127,7 @@
 
     <script src="/js/site.js"></script>
     <script>
-        document.getElementById('btnSubmit').addEventListener('click', displayMessage);
+        document.getElementById('btnSubmit').addEventListener('click', getValues);
     </script>
 </body>
 
