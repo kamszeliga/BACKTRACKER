@@ -24,7 +24,7 @@
     <link href="/css/site.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="mainBG">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" id="mainnav">
             <div class="container-fluid">
@@ -66,16 +66,17 @@
         </nav>
     </header>
 
-    <main class="content container">
-        <div class="row row-cols-1 row-cols-md-2 gy-2 h-100 w-100">
-            <div class="col border-2 border-end">
+    <main class="content container mb-3">
+        <div class="col-12 mainDiv p-4 rounded-2 h-100">
+        <div class="row row-cols-1 row-cols-md-2 gy-2 h-100 w-100 mainDiv">
+            <div class="col border-2 border-dark-subtle border-end">
                 <h1 class="fw-bold mb-3">Backtracker: A Coding Challenge</h1>
                 <h4 class="lead">A javascript coding exercise using arrays. This program will take the user's input and write it in reverse.</h4>
-                <h2 class="mt-5 border-2 border-bottom">Instructions</h2>
+                <h2 class="mt-5 border-2 border-dark-subtle border-bottom">Instructions</h2>
                 <p>Enter a word and click the button to watch the magic happen.</p>
             </div>
             <div class="col">
-                <h5 class="border-bottom border-success">Enter a string to reverse</h5>
+                <h5 class="border-bottom border-dark-subtle">Enter a string to reverse</h5>
                 <form action="#" class="row g-2">
                    <div class="col">
                     <input id="userString" type="text" class="form-control" placeholder="Enter a String" aria-label="Enter a String"/>
@@ -91,11 +92,8 @@
                 </div>
             
             </div>
-
-
-
-
         </div>
+    </div>
     </main>
 
     <footer class="container-fluid footer-main">
