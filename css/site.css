@@ -110,6 +110,10 @@ footer {
     border-color: var(--kls-darker-color);
 }
 
+.indexContainer {
+    margin-bottom: 5rem;
+}
+
 
 /*END: MAIN BODY*/
 
